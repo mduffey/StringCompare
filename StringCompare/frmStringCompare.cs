@@ -13,7 +13,7 @@ namespace StringCompare
     {
         public frmStringCompare()
         {
-            string mygit = "https://github.com/mduffey";
+            string mygit = "https://github.com/mduffey/StringCompare";
             InitializeComponent();
             lnkMe.Links.Add(0, mygit.Length, mygit);
         }
