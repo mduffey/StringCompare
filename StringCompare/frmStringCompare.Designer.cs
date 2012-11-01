@@ -36,6 +36,7 @@
             this.lblTwoCount = new System.Windows.Forms.Label();
             this.lblShouldBe = new System.Windows.Forms.Label();
             this.lblShouldBeDesc = new System.Windows.Forms.Label();
+            this.lnkMe = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // label1
@@ -122,11 +123,23 @@
             this.lblShouldBeDesc.TabIndex = 9;
             this.lblShouldBeDesc.Text = "Should Be:";
             // 
+            // lnkMe
+            // 
+            this.lnkMe.AutoSize = true;
+            this.lnkMe.Location = new System.Drawing.Point(4, 85);
+            this.lnkMe.Name = "lnkMe";
+            this.lnkMe.Size = new System.Drawing.Size(92, 13);
+            this.lnkMe.TabIndex = 10;
+            this.lnkMe.TabStop = true;
+            this.lnkMe.Text = "by Michael Duffey";
+            this.lnkMe.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.ClickedIt);
+            // 
             // frmStringCompare
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 85);
+            this.ClientSize = new System.Drawing.Size(284, 104);
+            this.Controls.Add(this.lnkMe);
             this.Controls.Add(this.lblShouldBeDesc);
             this.Controls.Add(this.lblShouldBe);
             this.Controls.Add(this.lblTwoCount);
@@ -136,7 +149,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.MaximumSize = new System.Drawing.Size(600, 144);
-            this.MinimumSize = new System.Drawing.Size(300, 20);
+            this.MinimumSize = new System.Drawing.Size(300, 38);
             this.Name = "frmStringCompare";
             this.Text = "String Compare";
             this.ResumeLayout(false);
@@ -154,6 +167,7 @@
         private System.Windows.Forms.Label lblTwoCount;
         private System.Windows.Forms.Label lblShouldBe;
         private System.Windows.Forms.Label lblShouldBeDesc;
+        private System.Windows.Forms.LinkLabel lnkMe;
     }
 }
 

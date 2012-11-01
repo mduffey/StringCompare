@@ -13,8 +13,14 @@ namespace StringCompare
     {
         public frmStringCompare()
         {
+            string mygit = "https://github.com/mduffey";
             InitializeComponent();
+            lnkMe.Links.Add(0, mygit.Length, mygit);
+        }
 
+        private void ClickedIt(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start((string)lnkMe.Links[0].LinkData);
         }
 
         private void rtxtString_Changed(object sender, EventArgs e)
